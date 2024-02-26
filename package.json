@@ -1,0 +1,42 @@
+{
+  "name": "orthoplex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": " mocha --config .mocharc.js test --recursive --exit -timeout 30000",
+    "start": "nodemon server.js",
+    "local": "NODE_ENV=local nodemon  --trace-warnings server"
+  },
+  "keywords": [],
+  "author": "nadia",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "joi": "^17.12.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.9.2",
+    "pg": "^8.11.3",
+    "sequelize": "^6.37.1",
+    "sequelize-cli": "^6.6.2",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/register": "^7.7.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "esm": "^3.2.25",
+    "mocha": "^9.1.2",
+    "supertest": "^6.3.4"
+  }
+}
